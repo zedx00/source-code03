@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis..com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+    min-height: 190vh;
+    background-image: rl('ima/HD-Airplane-Background.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    
+
+}
+header {
+
+
+    width: 80%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar a {
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+   margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: coral;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.welcometext {
+    background-color: #eee;
+    padding: 2em;
+    text-align: center;
+   
+    color: solid black;
+}
+
+.game {
+    background-color: #eee;
+    padding: 2em;
+    text-align: center;
+    background-color: transparent;
+    color:antiquewhite;
+    font-weight:700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+word-wrap: break-word;
+font-size: 105px;
+
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align:center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   height: 50px;
+  
+}
+.slider
+{
+    width: 90%;
+    height: 400px;
+    display: grid;
+    place-items: center;
+   
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin: 55px;
+    animation: slide 20s linear  infinite;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(ima/pexels-cottonbro-studio-6700143.jpg);
+    opacity: 90%;
+
+        
+    }
+@keyframes slide {
+
+    10%{
+        background-image: url(ima/pexels-dids-13816422.jpg);
+    }
+    30%{
+        background-image: url(ima/pexels-eko-agalarov-15713609.jpg);
+    }
+    50%{
+        background-image: url(ima/pexels-melanio-salome-jr-pech-2555390.jpg);
+    }
+    70%{
+        background-image: url(ima/pexels-pixabay-76964.jpg);
+    }
+    100%{
+        background-image: url(ima/pexels-tom-fisk-10636506.jpg);
+    }
+}
